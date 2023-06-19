@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const logSchema = new mongoose.Schema({
+const logsSchema = new mongoose.Schema({
         log_name: {
             type: String,
             required: true,
@@ -18,6 +18,6 @@ const logSchema = new mongoose.Schema({
     }
 );
 
-const log = mongoose.models.log || mongoose.model("log", logSchema);
+const logs = mongoose.models.logs || mongoose.model("logs", logsSchema);
 
-export default log;
+export default logs;
