@@ -12,9 +12,9 @@ import File from './models/file';
 import Message from './models/message';
 import TempToken from './models/tempToken';
 import User from './models/user';
-import FunctionErrLog from './models/functionErrLog';
+import FunctionErrLog from './models/log';
 export { AppPassword, File, Message, TempToken, User, FunctionErrLog };
 
 // src: src/bird/handler
-import { saveError } from './bird/handler';
-export { saveError };
+import { birdLog } from './bird/handler';
+export { birdLog };

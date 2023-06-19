@@ -1,14 +1,14 @@
-import FunctionErrLog from '../models/functionErrLog';
+import Log from '../models/log';
 
-export function saveError(name: string, err: any, type: string) {
+export function birdLog(name: string, err: any, type: string) {
     const validTypes = ['error', 'warning', 'info'];
     if (!validTypes.includes(type)) {
         throw new Error('Invalid type');
     }
-    const functionErrLog = new FunctionErrLog({
-        function_name: name,
-        error_message: err,
+    const log = new Log({
+        log_name: name,
+        log_message: err,
         type: type,
     });
-    functionErrLog.save();
+    log.save();
 }

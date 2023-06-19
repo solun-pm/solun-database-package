@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
-const functionErrLogSchema = new mongoose.Schema({
-        function_name: {
+const logSchema = new mongoose.Schema({
+        log_name: {
             type: String,
             required: true,
         },
-        error_message: {
+        log_message: {
             type: String,
             required: true,
         },
@@ -18,6 +18,6 @@ const functionErrLogSchema = new mongoose.Schema({
     }
 );
 
-const functionErrLog = mongoose.models.functionErrLog || mongoose.model("functionErrLog", functionErrLogSchema);
+const log = mongoose.models.log || mongoose.model("log", logSchema);
 
-export default functionErrLog;
+export default log;
