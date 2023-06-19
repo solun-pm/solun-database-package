@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const appPasswordsSchema = new mongoose.Schema(
+const app_passwords_schema = new mongoose.Schema(
   {
     user_id: {
       type: Number,
@@ -16,7 +16,7 @@ const appPasswordsSchema = new mongoose.Schema(
   }
 );
 
-const appPasswords =
-  mongoose.models.appPasswords || mongoose.model("appPasswords", appPasswordsSchema);
+const app_passwords =
+  mongoose.models.app_passwords || mongoose.model("app_passwords", app_passwords_schema);
 
-export default appPasswords;
+export default app_passwords;

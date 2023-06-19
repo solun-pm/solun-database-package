@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const tempTokenSchema = new mongoose.Schema(
+const temp_token_schema = new mongoose.Schema(
   {
     user_id: {
       type: Number,
@@ -38,7 +38,7 @@ const tempTokenSchema = new mongoose.Schema(
   }
 );
 
-const tempToken =
-  mongoose.models.tempToken || mongoose.model("tempToken", tempTokenSchema);
+const temp_token =
+  mongoose.models.temp_token || mongoose.model("temp_token", temp_token_schema);
 
-export default tempToken;
+export default temp_token;

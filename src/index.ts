@@ -7,14 +7,14 @@ import { findOneDocument, deleteOneDocument } from './utils/database/dbUtils';
 export { findOneDocument, deleteOneDocument };
 
 // src: src/models
-import AppPassword from './models/appPasswords';
+import app_password from './models/app_passwords';
 import File from './models/file';
 import Message from './models/message';
-import TempToken from './models/tempToken';
+import temp_token from './models/temp_token';
 import User from './models/user';
 import log from './models/log';
 import api_logs from './models/api_logs';
-export { AppPassword, File, Message, TempToken, User, log, api_logs };
+export { app_password, File, Message, temp_token, User, log, api_logs };
 
 // src: src/bird/handler
 import { birdLog, birdApiLog } from './bird/handler';

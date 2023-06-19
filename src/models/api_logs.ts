@@ -1,4 +1,3 @@
-import { Double } from "mongodb";
 import mongoose from "mongoose";
 
 const api_logsSchema = new mongoose.Schema({
@@ -15,7 +14,7 @@ const api_logsSchema = new mongoose.Schema({
             required: true,
         },
         ms: {
-            type: Double,
+            type: Number,
             required: true,
         },
         remoteAddress: {
