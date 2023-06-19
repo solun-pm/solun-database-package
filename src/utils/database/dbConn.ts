@@ -1,5 +1,5 @@
 // Used for connecting to the database
-import { saveError } from '../../bird/handler';
+import { birdLog } from '../../bird/handler';
 import mongoose from 'mongoose';
 
 const MONGODB_URL = process.env.MONGODB_URL;
@@ -37,7 +37,7 @@ async function dbConnect() {
         cached.conn = await cached.promise;
         return cached.conn;
     } catch (error) {
-        saveError('dbConnect', error, 'error');
+        birdLog('dbConnect', error, 'error');
         console.log(error);
     }
 }
