@@ -3,8 +3,9 @@ import dbConnect from './utils/database/dbConn';
 export { dbConnect };
 
 // src: src/utils/database/dbUtils.ts
-import { findOneDocument, deleteOneDocument } from './utils/database/dbUtils';
-export { findOneDocument, deleteOneDocument };
+import { findOneDocument, deleteOneDocument, updateOneDocument, findOneCASEDocument } from './utils/database/dbUtils';
+export { findOneDocument, deleteOneDocument , updateOneDocument, findOneCASEDocument };
+
 
 // src: src/models
 import app_password from './models/app_passwords';
