@@ -20,6 +20,10 @@ const user_aliases = new mongoose.Schema(
         type: String,
         required: true,
     },
+    goto: {
+        type: String,
+        required: true,
+    },
   },
   {
     timestamps: true,
