@@ -7,10 +7,14 @@ const user_aliases = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    alias_name: {
+    fqa: {
         type: String,
         required: true,
         unique: true,
+    },
+    alias_name: {
+        type: String,
+        required: true,
     },
     domain: {
         type: String,
