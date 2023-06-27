@@ -5,7 +5,6 @@ const user_aliases = new mongoose.Schema(
     user_id: {
       type: Number,
       required: true,
-      unique: true,
     },
     fqa: {
         type: String,
