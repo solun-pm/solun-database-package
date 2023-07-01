@@ -69,6 +69,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    recovery_key: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
