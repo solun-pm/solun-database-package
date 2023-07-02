@@ -71,7 +71,7 @@ const userSchema = new mongoose.Schema(
     },
     recovery_key: {
       type: String,
-      required: true,
+      required: false,
     },
   },
   {
