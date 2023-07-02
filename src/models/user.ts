@@ -69,6 +69,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    recoverable: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
     recovery_key: {
       type: String,
       required: false,
