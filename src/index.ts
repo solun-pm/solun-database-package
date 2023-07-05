@@ -16,7 +16,8 @@ import User from './models/user';
 import log from './models/log';
 import api_logs from './models/api_logs';
 import User_Aliases from './models/user_aliases';
-export { app_password, File, Message, temp_token, User, log, api_logs, User_Aliases };
+import User_Domains from './models/user_domains';
+export { app_password, File, Message, temp_token, User, log, api_logs, User_Aliases, User_Domains };
 
 // src: src/bird/handler
 import { birdLog, birdApiLog } from './bird/handler';
