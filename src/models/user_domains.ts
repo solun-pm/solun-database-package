@@ -11,6 +11,10 @@ const user_domains = new mongoose.Schema(
         required: true,
         unique: true,
     },
+    quota: {
+        type: Number,
+        required: true,
+    },
     membership: {
         type: String,
         required: true,
