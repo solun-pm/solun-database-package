@@ -1,6 +1,6 @@
 {
   "name": "solun-database-package",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "This package is used to manage the database tools and models of solun.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
