@@ -3,8 +3,8 @@ import dbConnect from './utils/database/dbConn';
 export { dbConnect };
 
 // src: src/utils/database/dbUtils.ts
-import { findOneDocument, deleteOneDocument, updateOneDocument, findOneCASEDocument } from './utils/database/dbUtils';
-export { findOneDocument, deleteOneDocument , updateOneDocument, findOneCASEDocument };
+import { findOneDocument, deleteOneDocument, updateOneDocument, findOneCASEDocument, findDocuments } from './utils/database/dbUtils';
+export { findOneDocument, deleteOneDocument , updateOneDocument, findOneCASEDocument, findDocuments };
 
 
 // src: src/models
