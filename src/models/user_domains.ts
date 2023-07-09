@@ -15,11 +15,6 @@ const user_domains = new mongoose.Schema(
         type: Number,
         required: true,
     },
-    membership: {
-        type: String,
-        required: true,
-        default: "free",
-    },
     verification_status: {
         type: String,
         required: true,
