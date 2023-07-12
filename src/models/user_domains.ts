@@ -15,6 +15,14 @@ const user_domains = new mongoose.Schema(
         type: Number,
         required: true,
     },
+    rate_limit: {
+        type: Number,
+        required: true,
+    },
+    rate_limit_interval: {
+        type: String,
+        required: true,
+    },
     verification_status: {
         type: String,
         required: true,
