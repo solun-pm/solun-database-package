@@ -78,6 +78,21 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
+    aliases: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    mailboxes: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    domains: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
   },
   {
     timestamps: true,
