@@ -11,6 +11,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    full_name: {
+      type: String,
+      required: false,
+    },
     domain: {
       // Domain name e.g. solun.pm
       type: String,

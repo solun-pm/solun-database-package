@@ -27,6 +27,11 @@ const user_domains = new mongoose.Schema(
         type: String,
         required: true,
     },
+    catch_all: {
+        type: Boolean,
+        required: true,
+        default: false,
+    },
     active: {
         type: Boolean,
         required: true,
