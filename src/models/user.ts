@@ -97,6 +97,10 @@ const userSchema = new mongoose.Schema(
       required: true,
       default: 0,
     },
+    api_access: {
+      type: Boolean,
+      default: false,
+    }
   },
   {
     timestamps: true,
