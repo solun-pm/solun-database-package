@@ -18,6 +18,6 @@ const api_keysSchema = new mongoose.Schema(
   }
 );
 
-const api_keys = mongoose.models.User || mongoose.model("api_keys", api_keysSchema);
+const api_keys = mongoose.models.api_keys || mongoose.model("api_keys", api_keysSchema);
 
 export default api_keys;
